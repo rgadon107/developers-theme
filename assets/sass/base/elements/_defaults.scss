@@ -2,7 +2,6 @@
 --------------------------------------------- */
 @import "body";
 
-a,
 button,
 input:focus,
 input[type="button"],
@@ -11,12 +10,13 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
-  @include transition( all 0.1s ease-in-out );
+  transition: all 0.2s ease-in-out;
 }
 
 a {
   color: $link--color;
   text-decoration: underline;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
   &:hover,
   &:focus {
@@ -26,16 +26,26 @@ a {
 }
 
 p {
-  margin: 0 0 28px;
+  margin: 0 0 30px;
   padding: 0;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 hr {
-  border: 0;
+  border: none;
   border-collapse: collapse;
   border-top: 1px solid #eee;
   clear: both;
-  margin: 1em 0;
+  margin: 30px 0;
 }
 
 b,
@@ -49,3 +59,13 @@ em,
 i {
   font-style: italic;
 }
+
+mark {
+  background: #ddd;
+  color: #333;
+}
+
+blockquote {
+  margin: 30px;
+}
+
