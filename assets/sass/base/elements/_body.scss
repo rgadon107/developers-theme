@@ -1,5 +1,7 @@
 
 html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-size: $html--font-size; /* 10px browser default */
 }
 
@@ -8,21 +10,13 @@ body {
   color: $base__color;
   font-family: $base--font-family;
   @include rem( font-size, $base--font-size );
-  -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: $base--line-height;
   margin: 0;
+  overflow-x: hidden;
 
    @include media( $breakpoint__screen-size--small ) {
     font-size: $base--font-size--small-screen;
   }
-
-  /* Chrome fix */
-  > div {
-    font-size: $base__div--font-size;
-
-     @include media( $breakpoint__screen-size--small ) {
-      font-size: $base__div--font-size--small-screen;
-    }
-  }
 }
+
