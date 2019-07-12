@@ -8,9 +8,9 @@ h4,
 h5,
 h6 {
   font-family: $headings--font-family;
-  font-weight: 600;
+  font-weight: 400;
   line-height: $headings--line-height;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 
 h1 {
@@ -29,6 +29,15 @@ h4 {
   @include rem( font-size, $h4--font-size );
 }
 
+.entry-content h3,
+.entry-content h4 {
+  font-weight: 600;
+}
+
+.entry-content h4 {
+  margin-top: 40px;
+}
+
 h5 {
   @include rem( font-size, $h5--font-size );
 }
@@ -36,3 +45,4 @@ h5 {
 h6 {
   @include rem( font-size, $h6--font-size );
 }
+
