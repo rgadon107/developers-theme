@@ -5,12 +5,6 @@
   overflow: hidden;
 }
 
-.gallery-item {
-  float: left;
-  margin: 0 0 28px;
-  text-align: center;
-}
-
 .gallery-columns-1 .gallery-item {
   width: 100%;
 }
@@ -66,5 +60,13 @@
   &:hover,
   &:focus {
     border: 1px solid #999;
+    outline: none;
   }
 }
+
+.gallery-item {
+  float: left;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
