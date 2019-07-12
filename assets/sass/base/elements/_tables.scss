@@ -4,10 +4,10 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  line-height: 2;
   margin-bottom: 40px;
+  table-layout: fixed;
   width: 100%;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 tbody {
@@ -17,19 +17,21 @@ tbody {
 td,
 th {
   text-align: left;
+  vertical-align: top;
 }
 
 td {
   border-top: 1px solid #eee;
-  padding: 6px;
+  padding: 10px;
 }
 
 th {
-  font-weight: 400;
-  padding: 0 6px;
+  font-weight: 600;
+  padding: 0 10px 10px;
 }
 
 td:first-child,
 th:first-child {
   padding-left: 0;
 }
+
