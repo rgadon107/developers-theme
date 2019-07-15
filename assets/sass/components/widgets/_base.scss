@@ -4,11 +4,9 @@
 
 .widget {
   margin-bottom: 40px;
-  word-wrap: break-word;
 
   ul > li {
     margin-bottom: 10px;
-    padding-bottom: 10px;
 
     &:last-of-type {
       padding-bottom: 0;
@@ -30,8 +28,7 @@
 }
 
 .widget p:last-child,
-.widget ul > li:last-of-type,
-.widget-area .widget:last-of-type {
+.widget ul > li:last-of-type {
   margin-bottom: 0;
 }
 
@@ -41,3 +38,4 @@
     margin-bottom: 5%;
   }
 }
+
