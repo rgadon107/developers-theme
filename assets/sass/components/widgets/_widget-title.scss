@@ -9,5 +9,7 @@
 
 .widget-title {
   @include rem( font-size, $widget-title--font-size );
+  font-weight: 600;
   margin-bottom: 20px;
 }
+
