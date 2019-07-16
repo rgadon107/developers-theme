@@ -20,6 +20,7 @@
 .enews-widget {
   input {
     font-size: 16px;
+    @include rem( font-size, $enews--font-size );
     margin-bottom: 10px;
   }
 
