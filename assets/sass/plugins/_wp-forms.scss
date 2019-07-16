@@ -1,0 +1,55 @@
+/* ## WP Forms
+--------------------------------------------- */
+
+.entry-content {
+  .wpforms-container {
+    margin-bottom: 40px;
+  }
+
+  .wpforms-form .wpforms-field {
+    clear: both;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+
+  .wpforms-form .wpforms-field-hp {
+    display: none !important;
+    left: -9000px !important;
+    position: absolute !important;
+  }
+}
+
+.site-container .wpforms-container .wpforms-form .wpforms-field input {
+  border-radius: 0;
+  height: auto;
+  padding: 15px;
+}
+
+.site-container .entry-content .wpforms-form {
+  .wpforms-field-label {
+    font-weight: 600;
+  }
+
+  .wpforms-field-sublabel {
+    font-size: 14px;
+    @include rem( font-size, $wpforms--font-size );
+    font-weight: 300;
+  }
+
+  .wpforms-form textarea {
+    padding: 15px;
+  }
+
+  .textarea.wpforms-field-small {
+    height: 120px;
+  }
+
+  .textarea.wpforms-field-medium {
+    height: 200px;
+  }
+
+  .textarea.wpforms-field-large {
+    height: 300px;
+  }
+}
+
