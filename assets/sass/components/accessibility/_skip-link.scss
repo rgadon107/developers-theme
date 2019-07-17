@@ -9,10 +9,16 @@
     width: 0;
     list-style: none;
   }
+
+  .skip-link-hidden {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /* Display outline on focus */
 :focus {
-  color: #333;
-  outline: #ccc solid 1px;
+  color: $skip-link--color;
+  outline: $skip-link--outline-color solid 1px;
 }
+
