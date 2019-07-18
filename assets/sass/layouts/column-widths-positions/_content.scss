@@ -12,6 +12,11 @@
     width: $content--width-large-screen;
   }
 
+  .sticky {
+    background-color: $entry-content-sticky--background-color;
+    padding: 30px;
+  }
+
   .content-sidebar-sidebar &,
   .sidebar-content-sidebar &,
   .sidebar-sidebar-content & {
