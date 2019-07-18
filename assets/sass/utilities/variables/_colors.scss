@@ -1,6 +1,7 @@
 // Base Colors
 //===================
 $white: #fff;
+$white--light-gray: #f5f5f5;
 $black: #000;
 $blue: #0073e5;
 $red: #c3251d;
@@ -79,8 +80,8 @@ $footer-widgets--background-color: $white;
 $entry-footer__meta--border-color: $gray--lighter;
 $entry-title--link-color: $gray;
 $entry-title--hover-color: $blue;
-$entry-content__code--background-color: $gray--lighter;
-$entry-content__code--color: $gray;
+$entry-content__code--background-color: $white--light-gray;
+$entry-content-sticky--background-color: $white--light-gray;
 
 
 //
