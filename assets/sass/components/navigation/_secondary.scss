@@ -3,6 +3,20 @@
 //===========================
 
 .nav-secondary {
-  background-color: $secondary-nav--background-color;
-  border-top: 1px solid $secondary-nav--border-color;
+  margin-top: 10px;
+
+  .genesis-nav-menu {
+    line-height: 1.5;
+  }
+
+  .menu-item {
+    display: inline-block;
+  }
+
+  a {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+  }
 }
+
