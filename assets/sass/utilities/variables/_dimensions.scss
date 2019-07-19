@@ -17,9 +17,8 @@ $max-width__landing-page: 800px;
 //
 // Content Widths
 //==========================
-$content--width: 880px;
-//$content--width: $base--width * 0.6875 + px;
-$content--width-larger-screen: 800px;
+$content--width: $max-width;
+$content--width-larger-screen: 832px; // 65% (0.65) of $base-width.
 $content--width-large-screen: 620px;
 $content-both-sidebars--width: 660px;
 $content-both-sidebars--width-larger-screen: 580px;
