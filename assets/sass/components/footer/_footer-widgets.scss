@@ -10,19 +10,29 @@
   .wrap {
     margin-left: auto;
     margin-right: auto;
+
+    @media only screen and (min-width: 960px) {
+      max-width: $max-width-larger-screen;
+    }
   }
 
   .widget:last-child {
     margin-bottom: 0;
   }
+}
 
-  .footer-widget-area {
-    margin-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+.footer-widget-area {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @media only screen and (min-width: 960px) {
+    float: left;
+    margin-bottom: 0;
+    width: calc(100% / 3);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
