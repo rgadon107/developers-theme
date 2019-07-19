@@ -8,6 +8,11 @@ table {
   table-layout: fixed;
   width: 100%;
   word-break: break-all;
+
+  @media only screen and (min-width: 480px) {
+      table-layout: auto;
+      word-break: normal;
+    }
 }
 
 tbody {
