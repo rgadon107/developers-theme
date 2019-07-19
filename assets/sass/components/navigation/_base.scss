@@ -8,12 +8,28 @@
   line-height: 1;
   width: 100%;
 
-  @media only screen and (max-width: 1023px) {
-    text-align: center;
+  > .menu-bold > a {
+    @media only screen and (min-width: 960px) {
+      font-weight: 700;
+    }
+  }
 
-    .genesis-nav-menu li,
-    .site-header ul & {
-      float: none;
+  > .menu-highlight > a {
+    @media only screen and (min-width: 960px) {
+      background-color: $nav-menu-highlight--background-color;
+      border-radius: 3px;
+      color: $nav-menu-highlight--link-color;
+      font-weight: 600;
+      margin-left: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &:focus,
+    a:hover {
+      @media only screen and (min-width: 960px) {
+        background-color: $nav-menu-highlight--link-focus-color;
+      }
     }
   }
 
@@ -22,9 +38,17 @@
     float: none;
     position: relative;
 
+    @media only screen and (min-width: 960px) {
+      display: inline-block;
+    }
+
     &:focus,
     &:hover {
       position: relative;
+
+      @media only screen and (min-width: 960px) {
+        position: relative;
+      }
     }
 
     &:hover > .sub-menu {
@@ -57,6 +81,10 @@
   .sub-menu,
   .sub-menu a {
     width: 100%;
+
+    @media only screen and (min-width: 960px) {
+      width: 180px;
+    }
   }
 
   .sub-menu {
@@ -69,11 +97,32 @@
     position: static;
     z-index: 99;
 
+    @media only screen and (min-width: 960px) {
+      border-top: 1px solid $submenu--border-color;
+      opacity: 0;
+      padding-left: 0;
+      position: absolute;
+      transition: opacity 0.4s ease-in-out;
+    }
+
     a {
       background-color: $submenu--link-background-color;
       @include rem( font-size, $submenu--font-size );
       position: relative;
       word-wrap: break-word;
+
+      @media only screen and (min-width: 960px) {
+        border: 1px solid $submenu--link-border-color;
+        border-top: 0;
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+    }
+
+    .sub-menu {
+      @media only screen and (min-width: 960px) {
+        margin: -46px 0 0 179px;
+      }
     }
   }
 }
