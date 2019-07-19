@@ -45,8 +45,13 @@ $site-title--link-color: $gray;
 //============================
 $nav--link-color: $gray;
 $nav--hover-color: $blue;
+$nav-menu-highlight--background-color: $gray;
+$nav-menu-highlight--link-color: $white;
+$nav-menu-highlight--link-focus-color: $blue;
+
 $submenu--border-color: $gray--lighter;
 $submenu--link-background-color: $white;
+$submenu--link-border-color: $gray--lighter;
 
 $primary-nav--link-color: $nav--link-color;
 
