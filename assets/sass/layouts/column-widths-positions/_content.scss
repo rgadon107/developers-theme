@@ -4,12 +4,9 @@
   float: right;
   width: $content--width;
 
-   @include media( $breakpoint__screen-size--larger ) {
+  @media only screen and (min-width: 960px) {
+    float: left;
     width: $content--width-larger-screen;
-  }
-
-   @include media( $breakpoint__screen-size--large ) {
-    width: $content--width-large-screen;
   }
 
   .sticky {
@@ -17,27 +14,22 @@
     padding: 30px;
   }
 
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar &,
-  .sidebar-sidebar-content & {
-    width: $content-both-sidebars--width;
-
-     @include media( $breakpoint__screen-size--larger ) {
-      width: $content-both-sidebars--width-larger-screen;
+  .sidebar-content & {
+    @media only screen and (min-width: 960px) {
+      float: right;
     }
-
-     @include media( $breakpoint__screen-size--large ) {
-      width: $content-both-sidebars--width-large-screen;
-    }
-  }
-
-  .content-sidebar &,
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar & {
-    float: left;
   }
 
   .full-width-content & {
     width: 100%;
+  }
+
+  .full-width-content &,
+  .landing-page & {
+    @media only screen and (min-width: 960px) {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
