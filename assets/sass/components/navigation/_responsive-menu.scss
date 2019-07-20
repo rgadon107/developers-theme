@@ -2,14 +2,13 @@
 // Responsive Menu
 // =======================================
 
-.menu {
-
-  .menu-item:focus {
+.menu .menu-item {
+  &:focus {
     position: static;
   }
 
-  .menu-item > a:focus + ul.sub-menu,
-  .menu-item.sfHover > ul.sub-menu {
+  > a:focus + ul.sub-menu,
+  &.sfHover > ul.sub-menu {
     left: auto;
     opacity: 1;
   }
@@ -27,28 +26,6 @@
   .genesis-nav-menu .menu-item:hover > .sub-menu {
     display: none;
   }
-}
-
-.menu-toggle {
-  float: right;
-  line-height: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 15px 0;
-  position: relative;
-  z-index: 1000;
-
-  &.activated::before {
-    content: "\f335";
-  }
-}
-
-.site-header .menu-toggle::before {
-  float: left;
-  margin-right: 5px;
-  position: relative;
-  text-rendering: auto;
-  top: 1px;
 }
 
 .menu-toggle,
@@ -75,6 +52,28 @@
   background-color: transparent;
   border-width: 0;
   color: $responsive-nav--link-color;
+}
+
+.menu-toggle {
+  float: right;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 15px 0;
+  position: relative;
+  z-index: 1000;
+
+  &.activated::before {
+    content: "\f335";
+  }
+}
+
+.site-header .menu-toggle::before {
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  text-rendering: auto;
+  top: 1px;
 }
 
 .sub-menu-toggle {
