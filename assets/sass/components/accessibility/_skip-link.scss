@@ -4,15 +4,15 @@
 .genesis-skip-link {
   margin: 0;
 
-  li {
-    height: 0;
-    width: 0;
-    list-style: none;
-  }
-
   .skip-link-hidden {
     display: none;
     visibility: hidden;
+  }
+
+  li {
+    height: 0;
+    list-style: none;
+    width: 0;
   }
 }
 
