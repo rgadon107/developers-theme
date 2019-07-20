@@ -4,10 +4,6 @@
 .pagination {
   clear: both;
   margin: 60px 0;
-
-  @media only screen and (max-width: 860px) {
-    margin: 5% auto;
-  }
 }
 
 .adjacent-entry-pagination {
